@@ -2,7 +2,7 @@
 ...
 **Progetto di un contatore creato interamente con Javascript e la manipolazione del DOM** 
 
-![Anteprima](file:///C:/Users/giaco/OneDrive/Desktop/Screenshot%202024-04-13%20192634.png) 
+![Anteprima](https://github.com/giacomomontepino/counter/blob/61576df3e3dc0dd8660022b37785bd8a94b0bf72/Screenshot%202024-04-13%20192634.png) 
 
 **Elementi creati:**
 1. Tasto per aumentare
@@ -16,5 +16,3 @@ Il funzionamento è molto semplice, premendo il tasto + il contatore aumenta di 
 **Link utili**
 1. Repository GitHub: https://github.com/giacomomontepino/counter
 2. Pagina progetto: http://127.0.0.1:5500/index.html
-
-
