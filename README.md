@@ -1,5 +1,5 @@
 # COUNTER 
-...
+
 **Progetto di un contatore creato interamente con Javascript e la manipolazione del DOM** 
 
 ![Anteprima](https://github.com/giacomomontepino/counter/blob/61576df3e3dc0dd8660022b37785bd8a94b0bf72/Screenshot%202024-04-13%20192634.png) 

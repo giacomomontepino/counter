@@ -4,36 +4,50 @@ title.appendChild(titleText);
 title.classList.add("title");
 document.body.appendChild(title);
 
-let buttonIncrease = document.createElement("button");
-const paragrafo = document.createElement("p");
-const paragrafoText = document.createTextNode("+");
-paragrafo.appendChild(paragrafoText);
-paragrafo.classList.add("operator");
-buttonIncrease.classList.add("increase");
-buttonIncrease.appendChild(paragrafo);
-document.body.appendChild(buttonIncrease);
 
-let counterValue = 0;
-let counter = document.createElement("p");
-let counterText = document.createTextNode(counterValue);
-counter.appendChild(counterText);
-counter.classList.add("counter");
-document.body.appendChild(counter);
+function addIncreaseButton(counter) {
+    let buttonIncrease = document.createElement("button");
+    const paragrafo = document.createElement("p");
+    const paragrafoText = document.createTextNode("+");
+    paragrafo.appendChild(paragrafoText);
+    paragrafo.classList.add("operator");
+    buttonIncrease.classList.add("increase");
+    buttonIncrease.appendChild(paragrafo);
+    document.body.appendChild(buttonIncrease);
+    buttonIncrease.addEventListener("click", function(){
+        counter.textContent = ++counter.textContent;
+    });
+    return buttonIncrease;
+}
 
-let buttonDecrease = document.createElement("button");
-const paragrafo2 = document.createElement("p");
-const paragrafo2Text = document.createTextNode("-");
-paragrafo2.appendChild(paragrafo2Text);
-buttonDecrease.appendChild(paragrafo2);
-buttonDecrease.classList.add("decrease");
-paragrafo2.classList.add("operator");
-document.body.appendChild(buttonDecrease);
+function addCounter() {
+    let counterValue = 0;
+    let counter = document.createElement("p");
+    let counterText = document.createTextNode(counterValue);
+    counter.appendChild(counterText);
+    counter.classList.add("counter");
+    document.body.appendChild(counter);
+    return counter;
+}
 
-buttonIncrease.addEventListener("click", function(){
-    counterValue++;
-    counter.textContent = counterValue;
+function addDecreaseButton(counter) {
+    let buttonDecrease = document.createElement("button");
+    const paragrafo2 = document.createElement("p");
+    const paragrafo2Text = document.createTextNode("-");
+    paragrafo2.appendChild(paragrafo2Text);
+    buttonDecrease.appendChild(paragrafo2);
+    buttonDecrease.classList.add("decrease");
+    paragrafo2.classList.add("operator");
+    document.body.appendChild(buttonDecrease);
+    buttonDecrease.addEventListener("click", function(){
+        counter.textContent = --counter.textContent;
+    });
+    return buttonDecrease;
+}
+
+document.addEventListener("DOMContentLoaded", function(){
+    let counter = addCounter();
+    addIncreaseButton(counter);
+    addDecreaseButton(counter);
 });
-buttonDecrease.addEventListener("click", function(){
-    counterValue--;
-    counter.textContent = counterValue;
-})
+
