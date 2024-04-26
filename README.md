@@ -15,4 +15,3 @@ Il funzionamento è molto semplice, premendo il tasto + il contatore aumenta di 
 
 **Link utili**
 1. Repository GitHub: https://github.com/giacomomontepino/counter
-2. Pagina progetto: http://127.0.0.1:5500/index.html
