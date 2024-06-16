@@ -15,3 +15,4 @@ Il funzionamento è molto semplice, premendo il tasto + il contatore aumenta di 
 
 **Link utili**
 1. Repository GitHub: https://github.com/giacomomontepino/counter
+2. Il mio contatore: https://counterofgiacomomontepino.netlify.app
